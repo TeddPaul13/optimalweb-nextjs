@@ -1,9 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import DrawerAppBar from "./pages/AppBarWithDrawer.js";
 
 export default function Home() {
   return (
     <div className={styles.page}>
+      <DrawerAppBar/>
       <main className={styles.main}>
         <Image
           className={styles.logo}
